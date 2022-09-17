@@ -1,0 +1,530 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Display:wght@700&family=Lexend+Deca&family=Overpass:wght@300;600&family=Ubuntu:wght@400;500;700&display=swap');
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ list-style:none;
+ text-decoration: none;
+}
+//Start Components
+html{   
+    width: 100%;
+    max-height: 100%;
+    font-family: 'Ubuntu';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 2rem;
+    background-color: hsl(0, 0%, 100%);
+}
+//Top Backgroud
+.top__background{
+    height: 600px;
+    border-bottom-left-radius: 80px;
+    background-image: url("images/bg-pattern-intro-desktop.svg");
+    background-position: 20%;
+}
+.top   {
+    background-image: linear-gradient(to right, hsl(13, 100%, 72%) , hsl(353, 100%, 62%));
+    border-bottom-left-radius: 80px;
+}
+// End Top Background
+// Stardt Header Section
+.hamburgermenu{
+    display: none;
+}
+.nav__mobilelistlogo{
+        display:none;
+}
+.nav__mobilelistham{
+        display:none;
+}
+.nav{
+    height: 100px;  
+    padding-top: 5%;
+    padding-right: 10%;
+    padding-left: 10%;
+    &__listitem:hover{
+        text-decoration: underline;
+        #arrow{
+            transform: rotate(180deg);
+        }     
+    }
+    &__list{
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        gap: 2rem;
+        height: 100%;
+        &btn{
+            margin-left: auto;
+            }
+        &logo{   
+            cursor: pointer;
+        }
+       
+        &item{                  
+            position:relative;
+            padding:0 0 0 1.5rem;
+            cursor:pointer;
+            color: white;      
+            &:hover ul, &:focus ul{
+                opacity:1;
+                visibility:visible;
+            }
+            &drop{
+                background-color: white;
+                position: absolute;
+                padding: 1.5rem;
+                width: 12rem;
+                left: -0.5rem;
+                display: flex;
+                flex-direction: column;
+                gap:1rem;
+                top:2rem;
+                border-radius: 6px; 
+                opacity:0;
+                visibility: hidden;
+                transition-delay: 100ms;               
+                a{
+                    color:black;
+                &:hover{
+                    font-weight: 900;
+                }
+            }
+            }
+            &item:hover{
+                text-decoration: underline white !important;
+                #arrow{
+                    transform: rotate(180deg);
+                }
+            }
+        }    
+    }
+}
+.loginbtn   {
+    color: white;
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    background-color: transparent;
+    border-radius: 30px;
+    border-color: white;
+    text-align: center;
+    &:hover{
+        background-color: hsl(355, 100%, 74%);
+    }
+    &:active{
+        background-color: white;
+       color: hsl(355, 100%, 74%);
+       font-weight: 700;
+   }
+}
+.signupbtn  {
+    color: hsl(355, 100%, 74%);
+    display: inline-block;
+    width: 120px;
+    height: 40px;
+    line-height: 40px;
+    font-weight: 500;
+    background-color: white;
+    border-radius: 30px;
+    border-color: white;
+    text-align: center;
+    &:hover{
+        background-color: hsl(355, 100%, 74%);
+        color:white;
+    }
+    &:active{
+        background-color: white;
+       color: hsl(355, 100%, 74%);
+       font-weight: 700;
+   }
+}
+//End Header Section
+//Start Landing Section
+.landing__main {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 500px;
+    &heading {
+        font-size: 40px;
+        color: white;
+    }
+    p {
+        color: white;
+        margin-top: 1rem;
+    }
+}
+.landing__mainCTA   {
+    &start {
+        color: hsl(355, 100%, 74%);
+        display:inline-block;
+        margin:( 2rem 1rem 0 1rem);
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        font-weight: 500;
+        background-color: white;
+        border-radius: 30px;
+        border-color: white;
+        text-align: center;
+        &:hover{
+            background-color: hsl(355, 100%, 74%);
+            color:white;
+        }
+        &:active{
+            background-color: white;
+           color: hsl(355, 100%, 74%);
+           font-weight: 700;
+       }
+    }
+    &learn {
+        color: white;
+        display:inline-block;
+        margin:( 2rem 1rem 0 1rem);
+        width: 140px;
+        height: 40px;
+        line-height: 40px;
+        background-color: transparent;
+        border-radius: 30px;
+        text-align: center;
+        border: 1px solid white;
+        &:hover{
+            background-color: hsl(355, 100%, 74%);
+        }
+        &:active{
+            background-color: white;
+           color: hsl(355, 100%, 74%);
+           font-weight: 700;
+       }
+    }
+}
+// End Landing Section
+// End Top Background Section
+// Start Main Section 1
+
+
+.s1__container  {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    background-color: white;
+    align-items: center;
+
+    &texxt{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding-left: 10%;
+    padding-right: 10%;
+    font-family: "Overpass";
+    max-width: 60%;
+    min-width: 60%;
+    }
+    &img  {
+    padding-top: 2rem;
+    overflow:hidden;
+    #s1imgmobile{
+        display:none;
+    }
+    }    
+}
+.s1topic  {
+    position: absolute;
+    left: 50%;
+    transform: translate(-50%, 0);
+    font-size: 20px;
+    padding-top: 10rem;
+    font-family: "Overpass";
+    font-weight: 600;
+}
+//End Main Section 1
+//Start Main Section 2
+.s2 {
+    background-image: linear-gradient(to right,hsl(237, 17%, 21%) ,  hsl(237, 23%, 32%));
+    height: 22rem;
+    width: 100%;
+    display: flex;
+    border-bottom-left-radius: 80px;
+    border-top-right-radius: 80px;
+    position: relative;
+
+    overflow: hidden;
+    z-index: 0;
+    &__conatiner   {
+        display: flex;
+        flex-direction: row;
+        justify-content: center; 
+        align-items: center;
+        padding-left: 10%;
+        padding-right: 10%; 
+        width: 100%;  
+        &phones{
+            #phones{
+                position:absolute;
+                z-index: 3;
+                top: 90rem;
+            }
+        }
+        &texxt {
+            padding-left: 4rem;
+            color: white;
+            font-family: "Overpass";
+            z-index: 2;
+            width: 60%;
+            margin-left: 40%;
+            h2{
+            font-size: 40px;   
+            }
+        } 
+    }
+    #circles{
+        width: 70%;
+        position: absolute;
+        left: -210px;
+        bottom: -90px;
+    }
+}
+//End Main Section 2
+//Start Main Section 3
+.s3__container    {
+    display: flex;
+    flex-direction: row;
+    justify-content: center; 
+    align-items: center;
+    padding-top: 5rem;
+    &img    {
+    padding-top: 2rem;
+    #s3img  {
+        margin: 0 0 0 -20rem;
+     }
+    #s3imgMobile{
+        display:none;
+    }
+    }
+    &texxt {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        padding-left: 2%;
+        padding-right: 10%;
+        font-family: "Overpass";
+        max-width: 60%;
+    }
+}
+//End Main Section 3
+//Start Footer Section
+.footer  {
+    background-color: hsl(240, 10%, 16%);
+    border-top-right-radius: 80px;
+    height: 400px;
+    padding-left: 5rem;
+    padding-right: 5rem;
+    &__list {
+        display: flex;
+        justify-content: space-between;
+        padding-top: 4rem;
+        gap: 2rem;
+        height: 100%;
+        padding-right: 5rem;
+        padding-left: 5rem;
+        &logo{   
+            cursor: pointer;
+        }
+        &item{                  
+            position:relative;
+            cursor:pointer;
+            color: white;      
+            font-family: "Ubuntu";
+            font-weight: 700;
+            font-size: 20px;
+            &drop{                
+                position: absolute;
+                display: flex;
+                flex-direction: column;
+                padding-top:3rem;
+                gap:1rem;
+                a{
+                    font-family: 'Overpass';
+                    font-weight: 300;
+                    color: white;
+                    font-size: 15px;
+                    &:hover{
+                        text-decoration: underline;
+
+                    }
+                }
+            }
+        }
+    }
+}
+
+
+//Media Q
+
+@media only screen and (max-width: 1050px) {
+//nav
+//SECTION 1
+    .nav__list{
+        display:none;
+    }
+    .nav__mobilelistlogo, .nav__mobilelistham{
+        display:block;
+    }
+    .nav__mobilelist{
+        display:flex;
+        justify-content: space-between;
+    }
+    
+    .s1topic{
+        padding-top: 5rem;
+        text-align: center;
+    }
+    .s1__container{
+    flex-direction: column-reverse;
+    padding-bottom: 5rem;
+    text-align: center;
+    
+    &texxt{
+        padding-left: 0;
+        padding-right:0;
+        min-width: 90%;
+        max-width: 90%;
+    }
+    h3{
+        padding:2rem 0 2rem 0;
+        font-size: 2rem;
+        min-width: 90%;
+    }
+   
+    #s1img{
+        display:none;
+    }
+    #s1imgmobile{
+        display:block;
+        padding-top: 10rem;
+    }
+    }
+    #phones{
+        display:none;
+    }
+
+
+//SECTION 2
+
+
+//SECTION 3
+    .s3__container{
+        flex-direction: column;
+        text-align: center;
+        padding-bottom: 5rem;
+        &texxt{
+            padding-left: 0;
+            padding-right:0;
+            min-width: 90%;
+            max-width: 90%;
+        }
+        h3{
+            padding:2rem 0 2rem 0;
+            font-size: 2rem;
+            min-width: 90%;
+        }
+        #s3imgMobile{
+            display:block;
+        }
+    }
+    #s3img{
+        display:none;
+    }
+        
+}
+
+@media only screen and (max-width: 820px) {
+    .footer{
+        height: auto;
+    }
+    .footer__list{
+        flex-direction: column;
+        align-items: center;
+        text-align: center;
+        &itemdrop{
+            position: relative;
+            gap:0rem;
+        }
+    }
+    .landing{
+        padding-left: 5%;
+        padding-right: 5%;
+        text-align: center;
+        &__mainheading{
+            h1{
+                font-family:'Ubuntu';
+                font-size: 38px;
+
+            }
+        }
+    }
+    .s1__container{ 
+        padding-bottom: 12rem;
+    }
+    .s2{
+        height: auto;
+        text-align: center;
+        #circles{
+            width: 150%;
+            position: absolute;
+            // left: -210px;
+            left:-25%;
+            bottom: 18rem;
+        }
+    }
+    .s2__conatiner{
+        height: 40rem;
+    }
+    .s2__conatinerphones{
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        #phones{
+            display:block;
+            width: 85%;
+            top:125rem;
+        }
+    }
+
+    .s2__conatinertexxt {
+        margin: 0;      
+        width: 100%;
+        padding: 6rem 0 0 0 ;
+        h2 {
+            font-size: 38px;
+        }
+    }
+   
+    .hamburgermenu{
+        width: 90%;
+        display:flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: absolute;
+        background-color: white;
+        text-align: center;
+        gap:1rem;
+
+        &__second{
+            background-color: gray;
+            width: 90%;
+            border-radius: 5px;
+
+        }
+    }
+   
+    
+}

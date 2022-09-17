@@ -1,0 +1,287 @@
+@import url("https://fonts.googleapis.com/css2?family=Manrope:wght@500;700&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: 'Manrope', sans-serif;
+  font-weight: 500;
+  font-size: 13px;
+}
+
+.background {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.card {
+  width: 100%;
+  height: auto;
+  border-radius: 20px;
+  background-color: white;
+  -webkit-box-shadow: 0px 24px 50px -9px rgba(0, 0, 0, 0.55);
+          box-shadow: 0px 24px 50px -9px rgba(0, 0, 0, 0.55);
+  margin: 5%;
+}
+
+.headImg {
+  border-radius: 20px 20px 0 0;
+}
+
+.headImg #headImg {
+  width: 100%;
+  height: auto;
+  border-radius: 20px 20px 0 0;
+}
+
+.main-section {
+  background-color: white;
+  border-radius: 0 0 20px 20px;
+  padding: 40px 55px 40px 34px;
+  height: 22rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+}
+
+.main-section h1 {
+  font-weight: 700;
+  font-size: 1.2rem;
+  color: #48556a;
+}
+
+.main-section p {
+  line-height: 1.3rem;
+  color: #6d7f97;
+}
+
+.main-section .avatar {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  max-width: 100%;
+}
+
+.main-section .avatar #avatar {
+  border-radius: 100px;
+  width: 3rem;
+  height: auto;
+}
+
+.main-section .avatar .name-and-img {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 0.2;
+      -ms-flex-positive: 0.2;
+          flex-grow: 0.2;
+  max-width: 13rem;
+}
+
+.main-section .avatar .avatar-name {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  height: 3rem;
+}
+
+.main-section .avatar .avatar-name h3 {
+  color: #48556a;
+  font-weight: 700;
+}
+
+.main-section .avatar .avatar-name span {
+  color: #9eafc2;
+}
+
+.main-section .avatar .share-btn {
+  position: relative;
+  background-color: #ecf2f8;
+  border-radius: 100px;
+  width: 2rem;
+  height: 2rem;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.main-section .avatar .share-btn #share {
+  width: 1rem;
+  height: 1rem;
+  cursor: pointer;
+}
+
+.share-btn-active .share-btn {
+  background-color: #48556a;
+}
+
+.share-btn-active #btn {
+  background-color: #48556a;
+}
+
+.share-btn-active #share {
+  -webkit-filter: brightness(1000%);
+          filter: brightness(1000%);
+}
+
+.tool-tip {
+  position: absolute;
+  background-color: #48556a;
+  width: 240px;
+  height: 50px;
+  padding: 18px 30px;
+  border-radius: 10px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  top: -250%;
+  letter-spacing: 0.3em;
+  color: #9eafc2;
+}
+
+.arrow {
+  width: 0;
+  height: 0;
+  margin: 0 auto;
+  border-top: 12px solid #48556a;
+  border-left: 12px solid transparent;
+  border-right: 12px solid transparent;
+  position: absolute;
+  top: -100%;
+}
+
+.hide {
+  display: none;
+}
+
+@media (min-width: 600px) {
+  h1 {
+    font-size: 8xp;
+  }
+  .background {
+    height: 100vh;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    max-width: 710px;
+    height: 280px;
+    margin: 0;
+  }
+  .main-section {
+    width: 100%;
+    height: 100%;
+    padding: 40px 55px 40px 34px;
+    border-radius: 0 20px 20px 0;
+  }
+  .main-section h1 {
+    font-size: 18px;
+  }
+  .main-section p {
+    font-size: 10px;
+    line-height: 1rem;
+  }
+  .headImg {
+    border-radius: 20px 0 0 20px;
+    width: 286px;
+  }
+  .headImg #headImg {
+    border-radius: 20px 0 0 20px;
+    width: auto;
+    height: 100%;
+  }
+  .avatar .name-and-img #avatar {
+    width: 40px;
+    height: 40px;
+  }
+  .avatar .name-and-img .avatar-name {
+    height: 2rem;
+  }
+  .avatar .name-and-img .avatar-name h3 {
+    font-size: 14px;
+  }
+  .avatar .name-and-img .avatar-name span {
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 590px) {
+  .tool-tip {
+    position: absolute;
+    background-color: #48556a;
+    width: 1000%;
+    height: 50px;
+    padding: 18px 30px;
+    border-radius: 10px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+    -ms-flex-pack: distribute;
+        justify-content: space-around;
+    letter-spacing: 0.3em;
+    color: #9eafc2;
+    top: 100%;
+    left: 300%;
+  }
+}
+/*# sourceMappingURL=style.css.map */

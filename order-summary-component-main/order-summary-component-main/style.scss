@@ -1,0 +1,152 @@
+@import url('https://fonts.googleapis.com/css2?family=Red+Hat+Display:wght@500;700;900&display=swap');
+
+*,
+*::before,
+*::after {
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ list-style:none;
+ text-decoration: none;
+}
+
+// colors //
+
+// primary
+
+$Pale-blue: hsl(225, 100%, 94%);
+$Bright-blue: hsl(245, 75%, 52%);
+
+// Neutral
+
+$Very-pale-blue: hsl(225, 100%, 98%);
+$Desaturated-blue: hsl(224, 23%, 55%);
+$Dark-blue: hsl(223, 47%, 23%);
+
+
+body{
+    padding: 5%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    width: 100%;
+    background-color: $Pale-blue;
+        font-family: 'Red Hat Display', sans-serif;
+            h1{
+                font-size: 26px;
+                font-weight: 900; 
+            }
+            h2{
+                font-size: 14px;
+                color:  hsl(224, 23%, 55%);
+                font-weight: 500;
+                line-height: 25px;
+            }
+}
+.background { 
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    z-index: -1;
+    flex-wrap: hide;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.card{
+    background-color: white;
+    border-radius: 20px;
+    display: flex;
+    width: 400px;
+    height: auto;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+    
+    z-index: 99;
+}
+.hero-img{
+    #img{
+        width: 100%;
+        border-radius: 20px 20px 0 0;
+    }
+}
+.card-text{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    gap: 20px;
+    padding: 10%;
+    .plan-box{
+        width: 100%;
+        background-color: hsl(225, 100%, 98%);
+        border-radius: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        height: 80px;
+        padding: 1rem;
+    }
+    .plan-box-main{
+        // text-align: center;
+        display: flex;
+        gap: 20px;
+    }
+    .plan-box-change{
+        a   {
+            color:  hsl(245, 75%, 52%);
+        }
+        font-weight: 900;
+    }
+    .plan-box-text{
+        h2 {
+            font-weight: 900;
+            color: $Dark-blue;
+        }
+        span    {
+            font-weight: 100;
+            color:  hsl(224, 23%, 55%);
+        }
+    }
+    .button-payment  {
+        height: 50px;
+        width: 100%;
+        border-radius: 10px;
+        background-color:  $Bright-blue;
+        font-size: 14px;
+        font-weight: 700;
+        border: none;
+        box-shadow: 0 10px 6px -6px $Pale-blue;
+        display: flex;
+        flex-direction: column;
+        align-content: center;
+        justify-content: center;
+        h2{
+            color: white;
+            font-weight: 700;
+        }
+        &:hover{
+            cursor: pointer;
+            opacity:60%;
+        }
+    }
+    .button-cancel{
+        h2{
+        font-weight: 700;
+        }
+        &:hover{
+            cursor: pointer;
+            opacity:60%;
+        }
+    }
+}
+
+
+
+
+

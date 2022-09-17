@@ -1,0 +1,173 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap');
+
+
+//VARIABLES
+
+//Primary
+$very_dark_blue:hsl(233, 47%, 7%);//main background
+$dark_blue: hsl(244, 38%, 16%);//card background
+$Soft_violet:hsl(277, 64%, 61%);//accent
+//Netural
+$white:hsl(0, 0%, 100%);//main heading,stats
+$white_transparent:hsla(0, 0%, 100%, 0.75);//main paragraph
+$white_transparent2:hsla(0, 0%, 100%, 0.6);//stat headings
+
+
+//START
+
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size:15px;
+
+}
+
+body{
+    background-color:$very_dark_blue ;
+    color:white;
+    display:flex;
+    justify-content: center;
+    font-family: "Inter";
+    font-weight: 400;
+
+    height: 100vh;
+    align-items: center;
+    justify-content: center;
+   
+}
+section{
+    display: grid;
+    grid-template-columns: 1fr;
+    @media (min-width: 670px){
+        grid-template-columns: 1fr 1fr;
+    }
+    width: 75%;
+    border-radius: 1rem;
+    background-color: $dark_blue;
+   
+    .card1 {   
+            padding: 15% 8% 15% 8%;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: space-around;
+           width: 100%;
+           text-align: center;
+            // @media  (max-width: 670){
+
+            //     text-align: left;        
+            // }
+
+            p{
+                font-size: 12px;
+            }
+    
+            
+            h1{
+                font-family:"Inter" ;
+                font-size:22px;
+                span{
+                    font-size: 22px;
+                    color:$Soft_violet;
+                }
+                
+    
+            }
+            @media (min-width: 670px){
+                padding: 10% 22% 10% 12%;
+                order:1;
+                text-align: left;  
+                
+                p{
+                    font-size: 14px;
+                }
+                h1{
+                    font-family:"Inter" ;
+                    font-size: 30px;
+                    span{
+                        font-size: 30px;
+                        color:$Soft_violet;
+                    }
+              
+                }
+            }    
+       
+
+        .texxt{
+            margin:8% 0 18% 0;
+            line-height: 1.5rem;
+            color:$white_transparent2;
+        }
+        .icons{
+            display:flex;
+            flex-direction: column;
+            gap:2rem;
+            line-height: 1.8rem;
+            h2{
+                font-family:"Inter";
+                font-size:20px;
+            }
+            p{
+                color:$white_transparent2 ;
+                font-size: 12px;
+            }
+            @media (min-width: 670px){
+                width: 100%;
+                flex-direction: row;
+                justify-content:space-between;
+                padding-right: 2rem;
+            }
+
+        }
+
+        }
+   
+    }
+
+.card2  {
+    width: 100%;
+    display: flex;
+    border-radius: 1rem 1rem 0 0;
+    background-color:$Soft_violet ;
+    @media (min-width: 670px){
+        order:2;
+        border-radius: 0 1rem 1rem 0;
+    }
+}
+#headImgMobile  {
+    // display: flex;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+    border-radius: 1rem 1rem 0 0;
+    // object-fit: cover;
+    opacity: 70%;
+    mix-blend-mode: multiply;
+    @media (min-width: 670px){
+        display:none;
+    }
+    
+}
+#headImgDesktop  {
+    display: none;
+    width: auto;
+    height : auto;
+    max-height: 100%;
+    max-width: 100%;
+    margin-left: auto;
+    border-radius: 0 1rem 1rem 0;
+    @media (min-width: 670px){
+        display: block;
+        opacity: 70%;
+        mix-blend-mode: multiply;
+        
+    }
+
+}

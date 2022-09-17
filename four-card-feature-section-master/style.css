@@ -1,0 +1,136 @@
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600&display=swap");
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  width: 100%;
+  color: hsl(234deg, 12%, 34%);
+  background-color: hsl(0deg, 0%, 98%);
+}
+body h1 {
+  font-size: 2em;
+  font-weight: 600;
+}
+body h2 {
+  font-size: 1.2em;
+  font-weight: 600;
+}
+body h3 {
+  font-size: 2em;
+  font-weight: 200;
+}
+body h4 {
+  font-size: 1em;
+  font-weight: 200;
+}
+body p {
+  font-size: 1em;
+  font-weight: 200;
+}
+
+footer {
+  display: none;
+}
+
+.main {
+  width: 100%;
+  padding: 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.topic {
+  text-align: center;
+  width: 100%;
+}
+.topic h4 {
+  padding-top: 1rem;
+}
+
+.boxes {
+  display: grid;
+  gap: 5%;
+  padding-top: 5%;
+}
+.boxes .box {
+  border-radius: 0.5rem;
+  padding: 6% 12%;
+  box-shadow: 8px 9px 38px -16px hsl(229deg, 6%, 66%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 18em;
+  border-top: 0.3rem;
+  border-style: solid;
+  border-left: 0;
+  border-right: 0;
+  border-bottom: 0;
+}
+.boxes .icon {
+  display: flex;
+  justify-content: flex-end;
+}
+.boxes .icon img {
+  height: 5em;
+  width: auto;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+.boxes .box_supervisor {
+  border-color: hsl(180deg, 62%, 55%);
+}
+.boxes .box_teamBuilder {
+  border-color: hsl(0deg, 78%, 62%);
+}
+.boxes .box_calculator {
+  border-color: hsl(212deg, 86%, 64%);
+}
+.boxes .box_karma {
+  border-color: hsl(34deg, 97%, 64%);
+}
+
+@media (min-width: 650px) {
+  body {
+    font-size: 15px;
+  }
+  .boxes {
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(4, 0.5fr);
+    grid-gap: 0.8rem;
+    margin-bottom: 0px;
+  }
+  .boxes .box_supervisor {
+    grid-column: 1;
+    grid-row: 2/span 2;
+  }
+  .boxes .box_teamBuilder {
+    grid-column: 2;
+    grid-row: 1/span 2;
+  }
+  .boxes .box_calculator {
+    grid-column: 3;
+    grid-row: 2/span 2;
+  }
+  .boxes .box_karma {
+    grid-column: 2;
+    grid-row: 3/span 4;
+  }
+  .topic {
+    text-align: center;
+    width: 50%;
+  }
+  .topic h4 {
+    padding-top: 1rem;
+  }
+}/*# sourceMappingURL=style.css.map */

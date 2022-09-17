@@ -1,0 +1,195 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Lexend+Deca&display=swap");
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  text-decoration: none;
+  font-size: 15px;
+}
+
+body {
+  background-color: #090b1a;
+  color: white;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  font-family: "Inter";
+  font-weight: 400;
+  height: 100vh;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  justify-content: center;
+}
+
+section {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr;
+      grid-template-columns: 1fr;
+  width: 75%;
+  border-radius: 1rem;
+  background-color: #1b1938;
+}
+
+@media (min-width: 670px) {
+  section {
+    -ms-grid-columns: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
+  }
+}
+
+section .card1 {
+  padding: 15% 8% 15% 8%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  width: 100%;
+  text-align: center;
+}
+
+section .card1 p {
+  font-size: 12px;
+}
+
+section .card1 h1 {
+  font-family: "Inter";
+  font-size: 22px;
+}
+
+section .card1 h1 span {
+  font-size: 22px;
+  color: #aa5cdb;
+}
+
+@media (min-width: 670px) {
+  section .card1 {
+    padding: 10% 22% 10% 12%;
+    -webkit-box-ordinal-group: 2;
+        -ms-flex-order: 1;
+            order: 1;
+    text-align: left;
+  }
+  section .card1 p {
+    font-size: 14px;
+  }
+  section .card1 h1 {
+    font-family: "Inter";
+    font-size: 30px;
+  }
+  section .card1 h1 span {
+    font-size: 30px;
+    color: #aa5cdb;
+  }
+}
+
+section .card1 .texxt {
+  margin: 8% 0 18% 0;
+  line-height: 1.5rem;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+section .card1 .icons {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  gap: 2rem;
+  line-height: 1.8rem;
+}
+
+section .card1 .icons h2 {
+  font-family: "Inter";
+  font-size: 20px;
+}
+
+section .card1 .icons p {
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 12px;
+}
+
+@media (min-width: 670px) {
+  section .card1 .icons {
+    width: 100%;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: row;
+            flex-direction: row;
+    -webkit-box-pack: justify;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding-right: 2rem;
+  }
+}
+
+.card2 {
+  width: 100%;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  border-radius: 1rem 1rem 0 0;
+  background-color: #aa5cdb;
+}
+
+@media (min-width: 670px) {
+  .card2 {
+    -webkit-box-ordinal-group: 3;
+        -ms-flex-order: 2;
+            order: 2;
+    border-radius: 0 1rem 1rem 0;
+  }
+}
+
+#headImgMobile {
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  border-radius: 1rem 1rem 0 0;
+  opacity: 70%;
+  mix-blend-mode: multiply;
+}
+
+@media (min-width: 670px) {
+  #headImgMobile {
+    display: none;
+  }
+}
+
+#headImgDesktop {
+  display: none;
+  width: auto;
+  height: auto;
+  max-height: 100%;
+  max-width: 100%;
+  margin-left: auto;
+  border-radius: 0 1rem 1rem 0;
+}
+
+@media (min-width: 670px) {
+  #headImgDesktop {
+    display: block;
+    /* opacity: 70%; */
+    mix-blend-mode: multiply;
+  }
+}
+/*# sourceMappingURL=style.css.map */

@@ -206,20 +206,20 @@ body{
 }
 }
 
-@media (max-width: 590px){
-    .tool-tip {
-        position:absolute;
-        background-color:$Very-Dark-Grayish-Blue;
-        width: 1000%;
-        height: 50px;
-        padding: 18px 30px;
-        border-radius: 10px;
-        display: flex;
-        align-items: center;
-        justify-content: space-around;
-        letter-spacing: 0.3em;
-        color:$Grayish-Blue;
-        top: 100%;
-        left: 300%;
-    }
-}
+// @media (max-width: 590px){
+//     .tool-tip {
+//         position:absolute;
+//         background-color:$Very-Dark-Grayish-Blue;
+//         width: 1000%;
+//         height: 50px;
+//         padding: 18px 30px;
+//         border-radius: 10px;
+//         display: flex;
+//         align-items: center;
+//         justify-content: space-around;
+//         letter-spacing: 0.3em;
+//         color:$Grayish-Blue;
+//         top: 100%;
+//         left: 300%;
+//     }
+// }

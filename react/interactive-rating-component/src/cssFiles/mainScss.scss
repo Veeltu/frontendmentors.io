@@ -1,0 +1,138 @@
+
+//COLORS
+
+//primary
+    $orange: hsl(25, 97%, 53%);
+//natural
+    $white: hsl(0, 0%, 100%);
+    $lightGrey: hsl(217, 12%, 63%);
+    $mediumGrey: hsl(216, 12%, 54%);
+    $darkBlue: hsl(213, 19%, 18%);
+    $veryDarkBlue: hsl(216, 12%, 8%);
+
+button{
+    border: none;
+}
+.mainCard{ 
+    // background-color: $darkBlue;
+    background: linear-gradient($darkBlue, hsl(212, 14%, 14%));
+    
+    width: 415px;
+    height: 415px;
+    border-radius: 25px;        
+    padding: 10px;
+    
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+    position: relative;
+}
+.mainText{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: column;
+    width: 350px;
+}
+.topBar{
+    width: 350px;
+    height: 40px;
+    left: 0;
+    
+}
+.buttonStar{
+    border-radius: 50%;
+    height: 50px;
+    width: 50px;
+
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    
+    
+    background-color: $veryDarkBlue;
+    border: none;
+    cursor: pointer;
+
+}
+#star{
+
+    &:hover{
+        transform: scale(140%);
+    }
+}
+.button{
+
+    border-radius: 50%;
+    padding: 20px;
+    height: 50px;
+    width: 50px;
+    
+    background-color: $veryDarkBlue;
+    border: none;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    
+    &:hover{
+        background-color: $mediumGrey;
+    }
+    &:focus{
+        background-color: $orange;
+    }
+
+
+}
+.ratingButtons{
+    display: flex;
+    justify-content: space-around;
+    flex-direction: row;
+    width: 350px;
+}
+.submitButton{
+    height: 45px;
+    width: 340px;
+    border-radius: 20px;
+    background-color: $orange;
+    border: 2px $white;
+    cursor: pointer;
+
+
+    
+    &:hover{
+        background-color: $white;
+        h2{
+            color: $orange;
+        }
+    }
+    &:active{
+        transform: scale(90%);
+        background-color: $orange;
+        h2{
+            color: $white;
+        }
+    }
+    
+}
+
+//thank you view
+
+.barResult{
+    height: 40px;
+    width: 250px;
+    background-color: $veryDarkBlue;
+    border-radius: 20px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    color: $orange;
+}
+.thankYouText{
+    text-align: center;
+}
+
+
